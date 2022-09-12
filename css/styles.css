@@ -17,8 +17,37 @@ body {
 
 .general {
 
+    display: flex;
+    flex-direction: row;
+
+
+    
+}
+
+.cuadrado1 {
+
     height: 20em;
     width: 20em;
 
     background-color: aquamarine;
+
+    margin-left: 2em;
+
+}
+
+.cuadrado2 {
+
+    height: 20em;
+    width: 20em;
+
+    background-color: green;
+    margin-left: 2em;
+
+}
+
+@media (max-width: 800px) {
+    .general {
+        
+        flex-direction: column;
+    }
 }
