@@ -6,9 +6,13 @@ body {
     height: 100vh;
     width: 100vw;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
+    /*Método/truco de Israel*/
+    display: grid;
+    place-items: center;
 }
 
 .general {
