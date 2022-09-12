@@ -17,8 +17,9 @@ body {
 
 .general {
 
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(2, 2fr);
 
 
     
@@ -45,9 +46,36 @@ body {
 
 }
 
+.cuadrado3 {
+
+    height: 20em;
+    width: 20em;
+
+    background-color: salmon;
+    margin-left: 2em;
+
+}
+
+.cuadrado4 {
+
+    height: 20em;
+    width: 20em;
+
+    background-color: blue;
+    margin-left: 2em;
+
+}
+
 @media (max-width: 800px) {
+    .general {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* @media (max-width: 800px) {
     .general {
         
         flex-direction: column;
     }
-}
+} */
